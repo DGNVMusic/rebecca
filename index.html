@@ -86,6 +86,10 @@
           transition-duration: 0.25s;
           transition-timing-function: ease-in-out;
         }
+        /* Set a gutter seperator with a white vertical line between columns except when the section #portfolio is set before */
+        .row:not(:first-child) > .col-12:not(:last-child) {
+          border-right: 1px solid white;
+        }
     </style>
 </head>
 <body>
