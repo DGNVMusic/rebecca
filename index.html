@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home &#8250; Rebecca Doodles</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://bootswatch.com">
+    <link rel="preconnect" href="https://source.unsplash.com">
+    <link rel="stylesheet" href="https://bootswatch.com/5/materia/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha256-+L0nZX1TcwZ6o+nYiFSXhVxihNSVcG37HM3wzcC8M5E=" crossorigin="anonymous">
+    <style>
+        @counter-style links {
+            system: cyclic;
+            symbols: "⪢";
+            suffix: " ";
+        }
+        .masthead {
+            height: 100vh;
+            min-height: 500px;
+            /* BG image with gradient overlay */
+            background-image: linear-gradient(to bottom, rgba(0,0,0 ,0.5), rgba(0,0,0 ,1)), url('https://source.unsplash.com/CFFPpiSe7DQ/1920x1080');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .navbar{
+          background-image: linear-gradient(to bottom, rgb(0,0,0), rgba(0,0,0)) !important;
+        }
+        .list-socials{
+          /* Left to right */
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          list-style: none;
+          padding: 0;
+        }
+        .list-socials > .list-item{
+          margin-right: 1rem;
+        }
+        .list-socials > .list-item:last-child{
+          margin-right: 0;
+        }
+        .list-links {
+          list-style: links;
+          padding: 0;
+        }
+        .list-links > li {
+          transform: translatex(0);
+          transition-duration: 0.25s;
+          transition-timing-function: ease-in-out;
+        }
+        .list-links > li > a {
+          text-decoration: none;
+          color: white;
+        }
+        .list-links > li :hover :focus {
+          transform: translatex(2px);
+          transition-duration: 0.25s;
+          transition-timing-function: ease-in-out;
+        }
+    </style>
+</head>
+<body>
+<header class="masthead" id="top">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-12 text-center">
+        <h1 class="fw-light display-3 text-white">Rebecca Doodles</h1>
+        <p class="lead text-white">Vtuber Artist and Designer</p>
+        <button class="btn btn-warning btn-xl rounded" onclick="document.querySelector('#about').scrollIntoView({ behavior: 'smooth' });">Learn more</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Rebecca Doodles</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#top">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="py-5 bg-dark text-white" id="about">
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-12">
+        <h2>Hi there! Nice to meet you!</h2>
+          <p class="lead">My name is Rebecca and I love to draw!</p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, reprehenderit velit. Expedita ratione et itaque vitae? Pariatur, nemo nisi quis molestias nam modi? Fugiat libero reiciendis possimus ad praesentium quas.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, sed accusamus atque officiis nemo ut, nesciunt eligendi laudantium neque ipsa reprehenderit exercitationem modi, dolore veniam aliquid quibusdam autem consequatur laboriosam.<br>
+            Repudiandae, blanditiis enim! Obcaecati doloremque dolor, officiis dolore velit consequuntur rerum! Sed illum sit molestiae? Repellendus vel error minus iusto commodi quae, quo sapiente perspiciatis pariatur modi consectetur minima alias!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio nihil quos esse similique, impedit laudantium magni consectetur dignissimos nobis aut expedita, nesciunt eaque? Consequuntur, fugit odit veritatis laboriosam temporibus error.<br>
+            Culpa facilis nisi aliquid ullam rem assumenda, voluptatem est consequuntur voluptate numquam veniam non totam et itaque dolores sint veritatis iste ipsam nostrum dignissimos mollitia saepe? Nisi doloremque sapiente officia.<br>
+            Dolores at eius mollitia officia doloremque provident voluptas delectus odio harum voluptatibus, aliquid laborum iste? Numquam, repudiandae architecto molestiae ad eveniet placeat deleniti atque harum blanditiis, voluptatem aliquam laboriosam dolores.<br>
+          </p>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-12 col-lg-8">
+          Full width on mobile, 2/3 width on tablet and up
+        </div>
+        <div class="col-12 col-lg-4">
+          1/3 width on tablet and up
+      </div>
+  </div>
+</section>
+<section class="py-5 bg-dark text-white" id="services">
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-12">
+        <h2>My services</h2>
+          <p class="lead">My services vary a lot actually.</p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, reprehenderit velit. Expedita ratione et itaque vitae? Pariatur, nemo nisi quis molestias nam modi? Fugiat libero reiciendis possimus ad praesentium quas.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, sed accusamus atque officiis nemo ut, nesciunt eligendi laudantium neque ipsa reprehenderit exercitationem modi, dolore veniam aliquid quibusdam autem consequatur laboriosam.<br>
+            Repudiandae, blanditiis enim! Obcaecati doloremque dolor, officiis dolore velit consequuntur rerum! Sed illum sit molestiae? Repellendus vel error minus iusto commodi quae, quo sapiente perspiciatis pariatur modi consectetur minima alias!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio nihil quos esse similique, impedit laudantium magni consectetur dignissimos nobis aut expedita, nesciunt eaque? Consequuntur, fugit odit veritatis laboriosam temporibus error.<br>
+            Culpa facilis nisi aliquid ullam rem assumenda, voluptatem est consequuntur voluptate numquam veniam non totam et itaque dolores sint veritatis iste ipsam nostrum dignissimos mollitia saepe? Nisi doloremque sapiente officia.<br>
+            Dolores at eius mollitia officia doloremque provident voluptas delectus odio harum voluptatibus, aliquid laborum iste? Numquam, repudiandae architecto molestiae ad eveniet placeat deleniti atque harum blanditiis, voluptatem aliquam laboriosam dolores.<br>
+          </p>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-12 col-lg-8">
+          Full width on mobile, 2/3 width on tablet and up
+        </div>
+        <div class="col-12 col-lg-4">
+          1/3 width on tablet and up
+      </div>
+  </div>
+</section>
+<section class="py-5 bg-dark text-white" id="portfolio">
+  <div class="container mt-5">
+    <div class="row">
+        <div class="col-12">
+            <h2>My portfolio</h2>
+            <p class="lead">Here's some of my work</p>
+        </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-12 col-lg-4">
+          <img src="https://placehold.co/600x400/EEE/31343C?font=raleway&text=Placeholder%20for%20this%20image" alt="Image1" class="lazy img-fluid">
+      </div>
+      <div class="col-12 col-lg-4">
+          <img src="https://placehold.co/600x400/EEE/31343C?font=raleway&text=Placeholder%20for%20this%20image" alt="Image2" class="lazy img-fluid">
+      </div>
+      <div class="col-12 col-lg-4">
+          <img src="https://placehold.co/600x400/EEE/31343C?font=raleway&text=Placeholder%20for%20this%20image" alt="Image2" class="lazy img-fluid">
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-12 col-lg-4">
+          <img src="https://placehold.co/600x400/EEE/31343C?font=raleway&text=Placeholder%20for%20this%20image" alt="Image1" class="lazy img-fluid">
+      </div>
+      <div class="col-12 col-lg-4">
+          <img src="https://placehold.co/600x400/EEE/31343C?font=raleway&text=Placeholder%20for%20this%20image" alt="Image2" class="lazy img-fluid">
+      </div>
+      <div class="col-12 col-lg-4">
+          <img src="https://placehold.co/600x400/EEE/31343C?font=raleway&text=Placeholder%20for%20this%20image" alt="Image2" class="lazy img-fluid">
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-12 col-lg-4">
+          <img src="https://placehold.co/600x400/EEE/31343C?font=raleway&text=Placeholder%20for%20this%20image" alt="Image1" class="lazy img-fluid">
+      </div>
+      <div class="col-12 col-lg-4">
+          <img src="https://placehold.co/600x400/EEE/31343C?font=raleway&text=Placeholder%20for%20this%20image" alt="Image2" class="lazy img-fluid">
+      </div>
+      <div class="col-12 col-lg-4">
+          <img src="https://placehold.co/600x400/EEE/31343C?font=raleway&text=Placeholder%20for%20this%20image" alt="Image2" class="lazy img-fluid">
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-12">
+          <p class="lead">You can find more at my <a href="https://behance.com/">Behance page</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="py-5 bg-warning text-white" id="contact">
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-12">
+        <h2>Let's talk somewhere else</h2>
+          <p class="lead">Here's how you can contact me</p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, reprehenderit velit. Expedita ratione et itaque vitae? Pariatur, nemo nisi quis molestias nam modi? Fugiat libero reiciendis possimus ad praesentium quas.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, sed accusamus atque officiis nemo ut, nesciunt eligendi laudantium neque ipsa reprehenderit exercitationem modi, dolore veniam aliquid quibusdam autem consequatur laboriosam.<br>
+            Repudiandae, blanditiis enim! Obcaecati doloremque dolor, officiis dolore velit consequuntur rerum! Sed illum sit molestiae? Repellendus vel error minus iusto commodi quae, quo sapiente perspiciatis pariatur modi consectetur minima alias!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio nihil quos esse similique, impedit laudantium magni consectetur dignissimos nobis aut expedita, nesciunt eaque? Consequuntur, fugit odit veritatis laboriosam temporibus error.<br>
+            Culpa facilis nisi aliquid ullam rem assumenda, voluptatem est consequuntur voluptate numquam veniam non totam et itaque dolores sint veritatis iste ipsam nostrum dignissimos mollitia saepe? Nisi doloremque sapiente officia.<br>
+            Dolores at eius mollitia officia doloremque provident voluptas delectus odio harum voluptatibus, aliquid laborum iste? Numquam, repudiandae architecto molestiae ad eveniet placeat deleniti atque harum blanditiis, voluptatem aliquam laboriosam dolores.<br>
+          </p>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-12 col-lg-8">
+          Full width on mobile, 2/3 width on tablet and up
+        </div>
+        <div class="col-12 col-lg-4">
+          1/3 width on tablet and up
+      </div>
+  </div>
+</section>
+<footer class="bg-black text-white py-5">
+  <div class="container">
+  <div class="row">
+    <div class="col-12 col-lg-3">
+        <h3>Rebecca Doodles</h3>
+        <p class="lead">Vtuber Artist and Designer</p>
+        <p>Copyright &copy; 2023 Rebecca Doodles</p>
+        <p>Project maintained by <br><a href="https://foxstudio.nl/" class="text-warning">FoxStudio Webdevelopment</a></p>
+    </div>
+    <div class="col-12 col-lg-7">
+      <h3>Links</h3>
+      <ul class="list-links">
+        <li><a href="#top">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+      </ul>
+    </div>
+    <div class="col-12 col-lg-2">
+      <h3>Socials</h3>
+      <ul class="list-socials">
+        <li class="list-item"><a href="https://twitter.com/"><img height="32" src="https://cdn.simpleicons.org/x/ffffff" alt="X Logo" /></a></li>
+        <li class="list-item"><a href="https://instagram.com/"><img height="32" src="https://cdn.simpleicons.org/instagram/ffffff" alt="X Logo" /></a></li>
+        <li class="list-item"><a href="https://behance.com/"><img height="32" src="https://cdn.simpleicons.org/behance/ffffff" alt="X Logo" /></a></li>
+      </ul>
+      <button type="button" class="btn btn-xl btn-warning rounded" onClick="funnyButton()">Funny Button</button>
+    </div>
+  </div>
+  </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.5/dist/lazyload.min.js" integrity="sha256-5Aq/PyOyPLAd5/6rMXc/Lb+UB0yw+w/uyN4YKxxp77M=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha256-gvZPYrsDwbwYJLD5yeBfcNujPhRoGOY831wwbIzz3t0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/js/fontawesome.min.js" integrity="sha256-nYaidq7hMCMvoO8hNMdQYorKwQcqMeNet9ZWJGUvVJ0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@0.11.0/dist/js-confetti.browser.min.js"></script>
+    <script defer>
+        var lazyLoadInstance = new LazyLoad({
+            elements_selector: ".lazy" // LazyLoad will only look for .lazy class
+        });
+        $(document).ready(function(){
+            $('[data-bs-toggle="tooltip"]').tooltip();
+        });
+        function funnyButton(){
+
+            // Play a party horn sound and release confetti
+
+            // Play a party horn sound
+            var audio = new Audio('static/funny/party.mp3');
+            audio.play();
+
+            // Release confetti
+            const jsConfetti = new JSConfetti();
+            jsConfetti.addConfetti();
+        }
+    </script>
+
+</body>
+</html>
